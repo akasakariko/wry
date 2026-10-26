@@ -1,5 +1,14 @@
 # Changelog
 
+## [0.57.2]
+
+- [`952c692`](https://github.com/tauri-apps/wry/commit/952c69256c31ea864610cb59f417e80b4a0b9e7d) ([#1909](https://github.com/tauri-apps/wry/pull/1909) by [@Legend-Master](https://github.com/tauri-apps/wry/../../Legend-Master)) On Android, fix a memory leak when running `evaluate_script`/`evaluate_script_with_callback`.
+- [`a665cc6`](https://github.com/tauri-apps/wry/commit/a665cc67748d2207ac6b46dbb8a470daae001b09) ([#1907](https://github.com/tauri-apps/wry/pull/1907) by [@renovate](https://github.com/tauri-apps/wry/../../renovate)) Updated dependency `dom_query` to 0.29
+
+### bug
+
+- [`713aee4`](https://github.com/tauri-apps/wry/commit/713aee46beffba6c49577380cd7cdc52b474f336) ([#1891](https://github.com/tauri-apps/wry/pull/1891) by [@LucaCappelletti94](https://github.com/tauri-apps/wry/../../LucaCappelletti94)) On Android WebViews supporting `WEB_MESSAGE_LISTENER`, take the IPC request URL from the WebView for main-frame messages and from the sender's origin for iframes, so a page's first IPC call no longer arrives as `about:blank`.
+
 ## [0.57.1]
 
 - [`f9b8bee`](https://github.com/tauri-apps/wry/commit/f9b8bee1de7cfa68d1ee17000c630abeb551b66e) ([#1885](https://github.com/tauri-apps/wry/pull/1885) by [@LucaCappelletti94](https://github.com/tauri-apps/wry/../../LucaCappelletti94)) On Android, read `__wryActivityId` only when the intent or saved state contains it.
